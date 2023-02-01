@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Divisibility</h1>
+    <h2>write a code to show all the numbers from 1 to 55, but numbers divisible by 4 should be replaced by 'fourDiv' and numbers divisible by 7 should be replaced by 'sevDiv'
+    </h2>
+    <button onclick="showNumbers()">Show numbers</button>
+    <p id = "output"></p>
+    <script>
+        function showNumbers() {
+            for(var i=1; i<=55; i++){
+                if(i % 4 ==0){
+                    document.write("fourDiv <br>");
+                }
+                else if(i % 7==0){
+                    document.write("sevDiv  <br>");
+                }
+                else{
+                document.write(i + "<br>")
+            }
+        }
+        }
+    </script>
+</body>
+</html>
